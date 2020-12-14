@@ -1,0 +1,2200 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#"
+     xml:base="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#containsTransportLine -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#containsTransportLine">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isPartJourney"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Journey_Pattern"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#hasCity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#hasCity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isCityOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#City"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#hasGeographicElement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#hasGeographicElement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Journey_Pattern"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Geographic_Element"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#hasOperator -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#hasOperator">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isOperatorOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Operator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#hasReview -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#hasReview">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isOfTransportLine"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Review"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#hasState -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#hasState">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isStateOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#hasTransportLine -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#hasTransportLine">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isPartOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Network"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#hasTransportLineC -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#hasTransportLineC">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isPartOfCity"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#City"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isCityOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isCityOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isOfTransportLine -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isOfTransportLine">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Review"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isOfType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isOfType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Mode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isOperatorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isOperatorOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isPartJourney -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isPartJourney">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Journey_Pattern"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isPartOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isPartOfCity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isPartOfCity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isStateOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isStateOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#State"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#costOfLiving -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#costOfLiving">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#population -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#population">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#AfricaCountry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#AfricaCountry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#AmericaCountry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#AmericaCountry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Angola_City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Angola_City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#City"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isCityOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Angola"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Argentina_City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Argentina_City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#City"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isCityOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Argentina"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#AsiaCountry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#AsiaCountry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Australia_City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Australia_City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#City"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isCityOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Australia"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Review"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Bank -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Bank">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Geographic_Element_With_Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Belgium_City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Belgium_City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#City"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isCityOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Belgium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Brazil_City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Brazil_City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#City"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isCityOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Brazil"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Bus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Bus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Mode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Canada_City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Canada_City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#City"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isCityOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Canada"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Chile_City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Chile_City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#City"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isCityOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Chile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#China_City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#China_City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#City"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isCityOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#China"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Colombia_City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Colombia_City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#City"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isCityOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Colombia"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Direct_Journey_Pattern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Direct_Journey_Pattern">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Journey_Pattern"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Indirect_Journey_Pattern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#EuropeanCountry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#EuropeanCountry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excellent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excellent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Review"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fair -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fair">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Review"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fast_Journey_Pattern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fast_Journey_Pattern">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Direct_Journey_Pattern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#France_City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#France_City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#City"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isCityOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#France"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Geographic_Element -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Geographic_Element">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Geographic_Element_With_Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Geographic_Element_With_Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Geographic_Element"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Geographic_Element_Without_Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Geographic_Element_Without_Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Geographic_Element_Without_Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Geographic_Element"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#German_City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#German_City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#City"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isCityOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Germany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Good -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Good">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Review"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#India_City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#India_City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#City"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isCityOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#India"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Indirect_Journey_Pattern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Indirect_Journey_Pattern">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Journey_Pattern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Indonesia_City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Indonesia_City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#City"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isCityOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Indonesia"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Interesting_Journey_Pattern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Interesting_Journey_Pattern">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Indirect_Journey_Pattern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Italy_City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Italy_City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#City"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Network"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#hasTransportLine"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isCityOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Italy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Japan_City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Japan_City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#City"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isCityOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Japan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Journey_Pattern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Journey_Pattern">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Journey_Pattern"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#hasGeographicElement"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Geographic_Element"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Place"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isPartJourney"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Journey_Pattern"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Leisure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Leisure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Geographic_Element_With_Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Leisure_Journey_Pattern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Leisure_Journey_Pattern">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Indirect_Journey_Pattern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Library -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Library">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Geographic_Element_With_Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Metro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Metro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Mode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Mexico_City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Mexico_City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#City"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isCityOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Mexico"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Mongolia_City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Mongolia_City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#City"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isCityOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Mongolia"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Morocco_City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Morocco_City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#City"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isCityOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Morocco"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Namibia_City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Namibia_City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#City"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isCityOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Namibia"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#New_Zealand_City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#New_Zealand_City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#City"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isCityOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#New_Zealand"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Niger_City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Niger_City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#City"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isCityOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Niger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Non_Fast_Journey_Pattern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Non_Fast_Journey_Pattern">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Direct_Journey_Pattern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#OceanianCountry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#OceanianCountry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Operator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Operator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Peru_City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Peru_City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#City"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isCityOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Peru"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Place"/>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Platform -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Platform">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Geographic_Element_Without_Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Poor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Poor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Review"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Post -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Post">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Geographic_Element_With_Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Protected_Journey_Pattern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Protected_Journey_Pattern">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Indirect_Journey_Pattern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Review -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Review">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Service_Journey_Pattern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Service_Journey_Pattern">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Indirect_Journey_Pattern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Shelter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Shelter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Geographic_Element_Without_Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Shopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Shopping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Geographic_Element_With_Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Shopping_Journey_Pattern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Shopping_Journey_Pattern">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Indirect_Journey_Pattern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#South_Africa_City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#South_Africa_City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#City"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isCityOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#South_Africa"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Spain_City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Spain_City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#City"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isCityOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Spain"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#State -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#State">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Sudan_City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Sudan_City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#City"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isCityOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Sudan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Train -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Train">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Mode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Tram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Tram">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Mode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Place"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#hasReview"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Review"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isOfType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Mode"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Mode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Mode">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Network -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Network">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Ucrain_City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Ucrain_City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#City"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isCityOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Ucrain"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Usa_City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Usa_City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#City"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#isCityOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Usa"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Angola -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Angola">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#AfricaCountry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Argentina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Argentina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#AmericaCountry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Australia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Australia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#OceanianCountry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average_Review -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average_Review">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average"/>
+        <isOfTransportLine rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average_Review_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average_Review_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average"/>
+        <isOfTransportLine rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average_Review_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average_Review_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average_Review_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average_Review_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average"/>
+        <isOfTransportLine rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line_3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average_Review_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average_Review_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average_Review_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average_Review_5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average_Review_6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average_Review_6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average_Review_7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average_Review_7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average_Review_8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average_Review_8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average_Review_9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average_Review_9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Belgium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Belgium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#EuropeanCountry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Brasilia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Brasilia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Brazil_City"/>
+        <hasTransportLineC rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line_2"/>
+        <isCityOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Brazil"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Brazil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Brazil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#AmericaCountry"/>
+        <hasCity rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Brasilia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Canada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Canada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#AmericaCountry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Chile -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Chile">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#AmericaCountry"/>
+        <hasCity rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Santiago"/>
+        <costOfLiving rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18000</costOfLiving>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#China -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#China">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#AsiaCountry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Colombia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Colombia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#AmericaCountry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excelent_Review -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excelent_Review">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excellent"/>
+        <isOfTransportLine rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excelent_Review_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excelent_Review_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excellent"/>
+        <isOfTransportLine rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excelent_Review_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excelent_Review_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excellent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excelent_Review_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excelent_Review_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excellent"/>
+        <isOfTransportLine rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line_3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excelent_Review_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excelent_Review_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excellent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excelent_Review_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excelent_Review_5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excellent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excelent_Review_6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excelent_Review_6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excellent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excelent_Review_7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excelent_Review_7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excellent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excelent_Review_8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excelent_Review_8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excellent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excelent_Review_9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excelent_Review_9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excellent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fair_Review -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fair_Review">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fair"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fair_Review_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fair_Review_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fair"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fair_Review_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fair_Review_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fair"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fair_Review_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fair_Review_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fair"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fair_Review_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fair_Review_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fair"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fair_Review_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fair_Review_5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fair"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fair_Review_6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fair_Review_6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fair"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fair_Review_7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fair_Review_7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fair"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fair_Review_8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fair_Review_8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fair"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fair_Review_9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fair_Review_9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fair"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fast_Journey_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fast_Journey_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fast_Journey_Pattern"/>
+        <containsTransportLine rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line"/>
+        <hasGeographicElement rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Platform_Element"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fast_Journey_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fast_Journey_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fast_Journey_Pattern"/>
+        <containsTransportLine rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line_3"/>
+        <hasGeographicElement rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Shelter_Element"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fast_Journey_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fast_Journey_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fast_Journey_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fast_Journey_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fast_Journey_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fast_Journey_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fast_Journey_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fast_Journey_5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fast_Journey_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fifth_Operator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fifth_Operator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Operator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#First_Operator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#First_Operator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Operator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fourth_Operator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fourth_Operator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Operator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#France -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#France">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#EuropeanCountry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Germany -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Germany">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#EuropeanCountry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Good_Review -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Good_Review">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Good"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Good_Review_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Good_Review_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Good"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Good_Review_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Good_Review_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Good"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Good_Review_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Good_Review_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Good"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Good_Review_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Good_Review_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Good"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Good_Review_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Good_Review_5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Good"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Good_Review_6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Good_Review_6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Good"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Good_Review_7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Good_Review_7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Good"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Good_Review_8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Good_Review_8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Good"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Good_Review_9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Good_Review_9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Good"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#India -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#India">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#AsiaCountry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Indonesia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Indonesia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#AsiaCountry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Interesting_Journey_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Interesting_Journey_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Interesting_Journey_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Interesting_Journey_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Interesting_Journey_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Interesting_Journey_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Interesting_Journey_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Interesting_Journey_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Interesting_Journey_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Interesting_Journey_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Interesting_Journey_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Interesting_Journey_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Interesting_Journey_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Interesting_Journey_5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Interesting_Journey_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Italy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Italy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#EuropeanCountry"/>
+        <hasCity rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Roma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Japan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Japan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#AsiaCountry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Leisure_Journey_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Leisure_Journey_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Leisure_Journey_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Leisure_Journey_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Leisure_Journey_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Leisure_Journey_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Leisure_Journey_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Leisure_Journey_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Leisure_Journey_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Leisure_Journey_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Leisure_Journey_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Leisure_Journey_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Leisure_Journey_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Leisure_Journey_5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Leisure_Journey_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Madrid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Madrid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Spain_City"/>
+        <hasTransportLineC rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line_3"/>
+        <isCityOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Spain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Mexico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Mexico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#AmericaCountry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Mongolia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Mongolia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#AsiaCountry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Morocco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Morocco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#AfricaCountry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Namibia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Namibia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#AfricaCountry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#New_Zealand -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#New_Zealand">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#OceanianCountry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Niger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Niger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#AfricaCountry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Non_Fast_Journey_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Non_Fast_Journey_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Non_Fast_Journey_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Non_Fast_Journey_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Non_Fast_Journey_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Non_Fast_Journey_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Non_Fast_Journey_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Non_Fast_Journey_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Non_Fast_Journey_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Non_Fast_Journey_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Non_Fast_Journey_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Non_Fast_Journey_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Non_Fast_Journey_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Non_Fast_Journey_5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Non_Fast_Journey_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Peru -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Peru">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#AmericaCountry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Platform_Element -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Platform_Element">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Platform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Platform_Element_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Platform_Element_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Platform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Platform_Element_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Platform_Element_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Platform"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Poor_Review -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Poor_Review">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Poor"/>
+        <isOfTransportLine rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Poor_Review_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Poor_Review_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Poor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Poor_Review_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Poor_Review_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Poor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Poor_Review_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Poor_Review_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Poor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Poor_Review_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Poor_Review_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Poor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Poor_Review_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Poor_Review_5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Poor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Poor_Review_6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Poor_Review_6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Poor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Poor_Review_7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Poor_Review_7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Poor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Poor_Review_8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Poor_Review_8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Poor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Poor_Review_9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Poor_Review_9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Poor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Protected_Journey_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Protected_Journey_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Protected_Journey_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Protected_Journey_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Protected_Journey_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Protected_Journey_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Protected_Journey_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Protected_Journey_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Protected_Journey_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Protected_Journey_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Protected_Journey_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Protected_Journey_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Protected_Journey_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Protected_Journey_5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Protected_Journey_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Roma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Roma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Italy_City"/>
+        <hasTransportLineC rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line"/>
+        <isCityOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Italy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Santiago -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Santiago">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Chile_City"/>
+        <hasTransportLineC rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line_1"/>
+        <isCityOf rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Chile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Second_Operator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Second_Operator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Operator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Service_Journey_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Service_Journey_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Service_Journey_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Service_Journey_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Service_Journey_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Service_Journey_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Service_Journey_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Service_Journey_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Service_Journey_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Service_Journey_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Service_Journey_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Service_Journey_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Service_Journey_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Service_Journey_5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Service_Journey_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Shelter_Element -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Shelter_Element">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Shelter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Shelter_Element_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Shelter_Element_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Shelter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Shelter_Element_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Shelter_Element_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Shelter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Shopping_Journey_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Shopping_Journey_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Shopping_Journey_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Shopping_Journey_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Shopping_Journey_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Shopping_Journey_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Shopping_Journey_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Shopping_Journey_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Shopping_Journey_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Shopping_Journey_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Shopping_Journey_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Shopping_Journey_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Shopping_Journey_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Shopping_Journey_5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Shopping_Journey_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Sixth_Operator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Sixth_Operator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Operator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#South_Africa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#South_Africa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#AfricaCountry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Spain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Spain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#EuropeanCountry"/>
+        <hasCity rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Madrid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Sudan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Sudan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#AfricaCountry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Third_Operator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Third_Operator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Operator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line"/>
+        <hasReview rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average_Review"/>
+        <isPartJourney rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fast_Journey_1"/>
+        <isPartOfCity rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Roma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line"/>
+        <hasReview rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average_Review_1"/>
+        <hasReview rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excelent_Review"/>
+        <isPartOfCity rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Santiago"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line"/>
+        <hasReview rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excelent_Review_1"/>
+        <hasReview rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Poor_Review"/>
+        <isPartOfCity rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Brasilia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line"/>
+        <hasReview rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average_Review_3"/>
+        <hasReview rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excelent_Review_3"/>
+        <isPartOfCity rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Madrid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line_5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line_6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line_6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line_7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line_7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line_8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line_8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line_9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line_9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Line"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Network -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Network">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Network"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Network_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Network_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Transport_Network"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Ucrain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Ucrain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#EuropeanCountry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Usa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Usa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#AmericaCountry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#AfricaCountry"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#AmericaCountry"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#AsiaCountry"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#EuropeanCountry"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#OceanianCountry"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Average"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Excellent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Fair"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Good"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Poor"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Belgium_City"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#France_City"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#German_City"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Italy_City"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Ucrain_City"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Bus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Metro"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Train"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Tram"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#City"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#Country"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/faspe/ontologies/2020/11/projectwebsemanticotransportline#State"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
